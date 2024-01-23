@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey’s</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TailwindCSS & DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .font-manrope {
+          font-family: "Manrope", sans-serif;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu Section -->
+    <div class="flex items-center justify-between p-12">
+      <div class="logo text-[5vw] flex items-center justify-between">
+        <!-- Hamburg Menu -->
+        <div class="hamburg block sm:hidden">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="btn btn-ghost btn-circle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h7"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo  -->
+        <p class="font-manrope font-bold">
+          Hockey<span class="text-[red]">’</span>s
+        </p>
+      </div>
+
+      <!-- Menu Items -->
+      <div class="navbar gap-[1vw] text-[2vw] hidden sm:flex sm:justify-center">
+        <a class="font-normal text-[red]" href="#">Home</a>
+        <a class="font-normal" href="#">About</a>
+        <a class="font-normal" href="#">Pages</a>
+        <a class="font-normal" href="#">Blog</a>
+        <a class="font-normal" href="#">Contact</a>
+      </div>
+
+      <!-- Search & Get Ticket -->
+      <div class="flex gap-2 items-center shrink-0">
+        <img
+          class="h-auto opacity-50 hidden sm:flex"
+          src="https://img.icons8.com/material/24/000000/search--v1.png"
+          alt="search--v1"
+        />
+        <button
+          class="bg-[#FF4240] text-white p-2 rounded-lg w-[120px] text-[2vw]"
+        >
+          Get Ticket
+        </button>
+      </div>
+    </div>
+
+    <!-- Hero Carousel Slider -->
+    <div class="p-12 relative">
+      <div class="carousel rounded-lg h-[50vw]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ewdtysme6x8gbudhrslg"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./Images/1.png" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#131318] w-[50%] absolute top-[40vw] right-[10vw] text-white p-4 rounded-lg"
+      >
+        <p class="font-bold text-[2vw]">Meet all the heroes from the field</p>
+        <small class="text-justify"
+          >Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </small>
+      </div>
+    </div>
+
+    <!-- Hocky CLub -->
+    <div class="p-12">
+      <div class="flex items-center flex-col w-[80%]">
+        <p>Professional Hockeys Club</p>
+        <p>
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+      <div class="flex">
+        <div class="s1">
+          <div
+            class="radial-progress text-[#FF4240]"
+            style="--value: 87"
+            role="progrdivbar"
+          >
+            87%
+          </div>
+          <p>Prayer Facility</p>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="s2">
+          <div
+            class="radial-progress text-[#49D293]"
+            style="--value: 95"
+            role="progrdivbar"
+          >
+            95%
+          </div>
+          <p>Prayer Facility</p>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="s3">
+          <div
+            class="radial-progress text-[#FFB546]"
+            style="--value: 90"
+            role="progrdivbar"
+          >
+            90%
+          </div>
+          <p>Prayer Facility</p>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="s4">
+          <div
+            class="radial-progress text-[#4C8DF1]"
+            style="--value: 80"
+            role="progrdivbar"
+          >
+            80%
+          </div>
+          <p>Prayer Facility</p>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program Sec -->
+    <div class="program p-12 border-box">
+      <div class="">
+        <p>Program Sections</p>
+        <p>
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-2 p-12">
+        <div class="jr">
+          <p>Junior Program</p>
+          <p class="w-[80%]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+            morbi nulla. Tortor congue sed et in.
+          </p>
+          <button>Register Now!</button>
+        </div>
+        <div class="teen">
+          <p>Junior Program</p>
+          <p class="w-[80%]">
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+            morbi nulla. Tortor congue sed et in.
+          </p>
+          <button>Register Now!</button>
+        </div>
+        <div class="pro col-span-2">
+          <p>Junior Program</p>
+          <p>
+            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc
+            morbi nulla. Tortor congue sed et in.
+          </p>
+          <button>Register Now!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOoter -->
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <aside>
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="fill-current"
+        >
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+          ></path>
+        </svg>
+        <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+      </aside>
+      <nav>
+        <header class="footer-title">Services</header>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <header class="footer-title">Legal</header>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+  </body>
+</html>
