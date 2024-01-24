@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- Menu Section -->
-    <div class="flex items-center justify-between p-12">
+    <div class="flex items-center justify-between p-4 md:p-10">
       <div class="logo text-[5vw] flex items-center justify-between">
         <!-- Hamburg Menu -->
         <div class="hamburg block sm:hidden">
@@ -101,10 +101,11 @@
     </div>
 
     <!-- Hero Carousel Slider -->
-    <div class="p-12 relative hide">
+    <div class="p-4 md:p-10 relative">
       <div class="carousel rounded-lg h-[50vw]">
         <div id="slide1" class="carousel-item relative w-full">
           <img
+            class="slider1-img"
             src="https://img.olympics.com/images/image/private/t_s_w960/t_s_16_9_g_auto/f_auto/primary/ewdtysme6x8gbudhrslg"
           />
           <div
@@ -148,27 +149,32 @@
         </div>
       </div>
       <div
-        class="bg-[#131318] w-[50%] absolute top-[40vw] right-[10vw] text-white p-4 rounded-lg"
+        class="bg-[#131318] md:w-[50%] md:absolute top-[40vw] right-[10vw] text-white p-4 rounded-lg"
       >
         <p class="font-bold text-[2vw]">Meet all the heroes from the field</p>
-        <small class="text-justify"
-          >Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
-          placerat dolor. Purus urna in sit nullam proin.
+        <small class="text-justify text-[1.4vw]"
+          >A hero is an ordinary individual who finds the strength to persevere
+          and endure in spite of overwhelming obstacles". - Christopher Reeve
         </small>
       </div>
     </div>
 
     <!-- Hocky CLub -->
-    <div class="p-12 hide">
-      <div class="flex items-center flex-col w-[80%]">
-        <p>Professional Hockeys Club</p>
-        <p>
-          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
-          placerat dolor. Purus urna in sit nullam proin.
+    <div class="p-4 md:p-10">
+      <div
+        class="flex items-center flex-col w-[80%] mx-auto border-dashed border-2 border-l-0 border-r-0 border-[#b6abab6e] p-4"
+      >
+        <p class="font-bold font-manrope text-[3vw]">
+          Professional Hockeys Club
+        </p>
+        <p class="text-center font-normal font-manrope text-[1.5vw] py-4">
+          Hockey is a fast-paced, exciting sport that is loved by many around
+          the world. It is a team game where two groups, each comprising six
+          players, compete against each other.
         </p>
       </div>
-      <div class="flex">
-        <div class="s1">
+      <div class="grid grid-cols md:grid-cols-4 gap-2 pt-[20px]">
+        <div class="s1 flex flex-col items-center p-3">
           <div
             class="radial-progress text-[#FF4240]"
             style="--value: 87"
@@ -176,10 +182,13 @@
           >
             87%
           </div>
-          <p>Prayer Facility</p>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="font-manrope text-[2vw] font-bold py-2">Prayer Facility</p>
+          <p class="font-manrope text-[1.5vw] opacity-90 w-1/2 text-center md:w-full md:text-justify">
+            A multifaith space or multifaith prayer room is a quiet location set
+            aside in a busy public place
+          </p>
         </div>
-        <div class="s2">
+        <div class="s2 flex flex-col items-center p-3">
           <div
             class="radial-progress text-[#49D293]"
             style="--value: 95"
@@ -187,10 +196,13 @@
           >
             95%
           </div>
-          <p>Prayer Facility</p>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="font-manrope text-[2vw] font-bold py-2">Experienced Coach</p>
+          <p class="font-manrope text-[1.5vw] opacity-90 w-1/2 text-center md:w-full md:text-justify">
+            These coaches provide personalized sessions, game strategy analysis,
+            and tips to enhance your gameplay.
+          </p>
         </div>
-        <div class="s3">
+        <div class="s3 flex flex-col items-center p-3">
           <div
             class="radial-progress text-[#FFB546]"
             style="--value: 90"
@@ -198,10 +210,13 @@
           >
             90%
           </div>
-          <p>Prayer Facility</p>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="font-manrope text-[2vw] font-bold py-2">Senior Player</p>
+          <p class="font-manrope text-[1.5vw] opacity-90 w-1/2 text-center md:w-full md:text-justify">
+            Senior Player means a player who has played International,
+            provincial, or professional.
+          </p>
         </div>
-        <div class="s4">
+        <div class="s4 flex flex-col items-center p-3">
           <div
             class="radial-progress text-[#4C8DF1]"
             style="--value: 80"
@@ -209,14 +224,17 @@
           >
             80%
           </div>
-          <p>Prayer Facility</p>
-          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="font-manrope text-[2vw] font-bold py-2">Training Ground</p>
+          <p class="font-manrope text-[1.5vw] opacity-90 w-1/2 md:w-full md:text-justify text-center">
+            an area where people prepare for sporting competitions, with
+            activities primarily concentrating on skills and fitness.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- Program Sec -->
-    <div class="program p-12 border-box hide">
+    <div class="program p-4 md:p-10 border-box hide">
       <div class="">
         <p>Program Sections</p>
         <p>
@@ -662,101 +680,139 @@
       </div>
     </div>
 
-     <!-- get in touch section -->
-     <section class="p-12 hide">
+    <!-- get in touch section -->
+    <section class="p-12 hide">
       <!-- text section -->
       <div
-        class="flex flex-col justify-center items-center border-dotted border-t-2 border-b-4  space-y-5 lg:p-16 p-5 lg:mb-20"
+        class="flex flex-col justify-center items-center border-dotted border-t-2 border-b-4 space-y-5 lg:p-16 p-5 lg:mb-20"
       >
         <h2 class="lg:text-3xl font-extrabold">Get <span>In </span>Touch</h2>
         <p class="lg:w-[600px] w-full text-center mt-6 capitalize">
-          Hey people's Our clint is very important .Are you contribute with us please fill up the form  and stay with us.
+          Hey people's Our clint is very important .Are you contribute with us
+          please fill up the form and stay with us.
         </p>
       </div>
       <!-- img section -->
       <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 space-y-5 p-5">
-        <div class="col-span-2 space-y-6 lg:p-14 p-6 border-[1px] broder-gray-300 rounded-2xl">
+        <div
+          class="col-span-2 space-y-6 lg:p-14 p-6 border-[1px] broder-gray-300 rounded-2xl"
+        >
           <div class="bg-[#BCED6D1A] p-8 rounded-2xl">
-            <img src="./images/12.png" alt="">
+            <img src="./images/12.png" alt="" />
             <p>Phone Number</p>
             <h3>+8801980640702</h3>
           </div>
           <div class="bg-[#FDDD5F1A] p-8 rounded-2xl">
-            <img src="./images/13.png" alt="">
+            <img src="./images/13.png" alt="" />
             <p>Email</p>
             <h3>iftakharalamshuvo@gmail.com</h3>
           </div>
           <div class="bg-[#629CF31A] p-8 rounded-2xl">
-            <img src="./images/14.png" alt="">
+            <img src="./images/14.png" alt="" />
             <p>Location</p>
             <h3>Chittagong</h3>
           </div>
-
         </div>
-  
+
         <!-- your name -->
         <div class="col-span-3">
           <form class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- name -->
-            <div class=" lg:col-span-1 col-span-2">
+            <div class="lg:col-span-1 col-span-2">
               <div class="label space-y-3">
-                <span class=" label-text text-xl font-bold">what is your name</span>
-               
+                <span class="label-text text-xl font-bold"
+                  >what is your name</span
+                >
               </div>
-              <input type="text" name="" id="" placeholder="Enter your name" class="bg-gray-100 w-full input">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter your name"
+                class="bg-gray-100 w-full input"
+              />
             </div>
             <!-- email -->
-            <div class=" lg:col-span-1 col-span-2">
+            <div class="lg:col-span-1 col-span-2">
               <div class="label space-y-3">
-                <span class=" label-text text-xl font-bold">what is your Email</span>
-               
+                <span class="label-text text-xl font-bold"
+                  >what is your Email</span
+                >
               </div>
-              <input type="email" name="" id="" placeholder="Enter Your Email" class="bg-gray-100 w-full input">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter Your Email"
+                class="bg-gray-100 w-full input"
+              />
             </div>
             <!-- subject -->
-            <div class=" lg:col-span-1 col-span-2">
+            <div class="lg:col-span-1 col-span-2">
               <div class="label space-y-3">
-                <span class=" label-text text-xl font-bold">what is your subject</span>
-               
+                <span class="label-text text-xl font-bold"
+                  >what is your subject</span
+                >
               </div>
-             <input type="text" name="" id="" class="bg-gray-100 w-full input" placeholder="Enter Your subject">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="bg-gray-100 w-full input"
+                placeholder="Enter Your subject"
+              />
             </div>
             <!-- number -->
-            <div class=" lg:col-span-1 col-span-2">
+            <div class="lg:col-span-1 col-span-2">
               <div class="label space-y-3">
-                <span class=" label-text text-xl font-bold">what is your Number</span>
-               
+                <span class="label-text text-xl font-bold"
+                  >what is your Number</span
+                >
               </div>
-             <input type="number" name="" id="" placeholder="Enter Your subject" class="bg-gray-100 w-full input">
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Enter Your subject"
+                class="bg-gray-100 w-full input"
+              />
             </div>
             <!-- text area -->
-            <div class=" col-span-2">
+            <div class="col-span-2">
               <div class="label space-y-3">
-                <span class=" label-text text-xl font-bold">Details</span>
-               
+                <span class="label-text text-xl font-bold">Details</span>
               </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10"  class="bg-gray-100 w-full input p-[1.5rem] leading-8  col-span-2" style="height: 304px;" placeholder="Enter your details"></textarea>
-            <button class="btn bg-primary w-full col-span-2 text-white hover:text-black text-xl font-bold lg:mt-12 mt-6 ">Send Message</button>
-           
-           
-
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="bg-gray-100 w-full input p-[1.5rem] leading-8 col-span-2"
+              style="height: 304px"
+              placeholder="Enter your details"
+            ></textarea>
+            <button
+              class="btn bg-primary w-full col-span-2 text-white hover:text-black text-xl font-bold lg:mt-12 mt-6"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
-          <!-- social media -->
-          <div class=" bg-gray-200 w-full py-14 rounded-2xl space-y-5">
-            <h2 class="text-center text-2xl font-extrabold">Social <span>Media</span></h2>
-            <div class="flex justify-center items-center gap-4">
-              <i class="fa-brands fa-twitter text-2xl text-sky-600"></i>
-              <i class="fa-brands fa-facebook text-2xl text-blue-400"></i>
-              <i class="fa-brands fa-instagram text-2xl text-red-400"></i>
-              <i class="fa-brands fa-github text-2xl"></i>
-            </div>
-        
-          </div>
+      <!-- social media -->
+      <div class="bg-gray-200 w-full py-14 rounded-2xl space-y-5">
+        <h2 class="text-center text-2xl font-extrabold">
+          Social <span>Media</span>
+        </h2>
+        <div class="flex justify-center items-center gap-4">
+          <i class="fa-brands fa-twitter text-2xl text-sky-600"></i>
+          <i class="fa-brands fa-facebook text-2xl text-blue-400"></i>
+          <i class="fa-brands fa-instagram text-2xl text-red-400"></i>
+          <i class="fa-brands fa-github text-2xl"></i>
+        </div>
+      </div>
     </section>
-
 
     <!-- FOoter -->
     <div class="footer p-10 bg-base-200 text-base-content hide">

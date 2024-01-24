@@ -12,6 +12,10 @@
   object-fit: cover;
 }
 
+.slider1-img{
+  width: inherit;
+}
+
 .jr {
   background-image: linear-gradient(
       180deg,
