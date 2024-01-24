@@ -22,7 +22,7 @@
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url("./images/2.png");
+    url("./Images/2.png");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -40,7 +40,7 @@
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url("./images/3.png");
+    url("./Images/3.png");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -58,7 +58,7 @@
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url("./images/4.png");
+    url("./Images/4.png");
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
